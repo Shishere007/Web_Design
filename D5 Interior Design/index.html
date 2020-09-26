@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index_style.css">
+    <link rel="stylesheet" href="./css/index_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>D5 Interiors</title>
 </head>
 
@@ -14,7 +15,7 @@
         <div class="header container">
             <div class="nav-bar">
                 <div class="brand">
-                    <a href="#hero">
+                    <a href="./">
                         <img src="./icons/company-logo.png" alt="">
                     </a>
                 </div>
@@ -25,6 +26,7 @@
                     <ul>
                         <li><a href="#hero" data-after="Home">Home</a></li>
                         <li><a href="#service" data-after="Services">Services</a></li>
+                        <li><a href="./service_details.php" data-after="Our Works">Our Works</a></li>
                         <li><a href="#contact" data-after="Contact">Contact</a></li>
                     </ul>
                 </div>
@@ -34,14 +36,34 @@
     <!-- End Header -->
 
     <!-- Hero Section -->
-    <section id="hero">
+    <section id="hero" style="background-image: url(./image/hero-cover.jpg);">
         <div class="hero container">
-            <div>
-
-                <h1>Welcome<span></span></h1>
-                <h1>to<span></span></h1>
-                <h1><i>D5</i> Interiors<span></span></h1>
-                <!-- <a href="#" type="button" class="cta">Portfolio</a> -->
+            <div class="board">
+                <!-- <h1><i>D5</i> Interiors<span></span></h1> -->
+                <h1><i><span>D5 </span></i>&nbsp;Interiors</h1>
+                <h3>Musliyarangadi</h3>
+                <h2><i><span>Your</span> Thought,&nbsp; <span>Our</span> Design</i></h2>
+                <div class="link">
+                    <h3>Our Services</h3>
+                    <a href="#service">
+                        <!-- <img src="./icons/right-arrow.png" alt=""> -->
+                        <i class="fa fa-arrow-circle-right" style="font-size:48px;color:crimson"></i>
+                    </a>
+                </div>
+                <div class="link">
+                    <h3>Previous Works</h3>
+                    <a href="service_details.php">
+                        <i class="fa fa-arrow-circle-right" style="font-size:48px;color:crimson"></i>
+                        <!-- <img src="./icons/right-arrow.png" alt=""> -->
+                    </a>
+                </div>
+                <div class="link bt">
+                    <a href="#contact">
+                        <button class="btn">
+                            Contact us
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -53,55 +75,91 @@
                 <h1 class="section-title">Serv<span>i</span>ces</h1>
             </div>
             <div class="service_bottom">
-                <div class="service-item" id="space_planning">
-                    <a href="./service_details.html#space-planning"></a>
+                <div class="service-item" style="background-image: url(./image/Space-Planning.jpg);">
+                    <!-- <a href="./service_details.php#space-planning"></a> -->
                     <h1>space planning</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, atque.</p>
+                    <p>Space planning helps ensure efficient use of floor space without wasting it. If done right, it
+                        also accounts for all possible uses of a given space</p>
                 </div>
-                <div class="service-item" id="_3d-visualising">
-                    <a href="./service_details.html#_3d-visualising"></a>
+                <div class="service-item" style="background-image: url(./image/3D-Visualising.jpg);">
                     <h1>3D visualising</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, atque.</p>
+                    <p>Interior architectural renderings are 3D images from the perspective of a building's interior.
+                        These renderings are dynamic, realistic ways to get an inside look at a building's layout and
+                        interior design</p>
                 </div>
-                <div class="service-item" id="commercial-interior">
+                <div class="service-item" style="background-image: url(./image/Commercial-Interior.jpg);">
                     <h1>commercial interior</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, atque.</p>
+                    <p>Commercial interior design involves the development of interior spaces used for business
+                        purposes. Commercial buildings have the primary purpose of making money, so commercial interior
+                        design is focused on the usability of a structure.</p>
                 </div>
-                <div class="service-item" id="office-interior">
+                <div class="service-item" style="background-image: url(./image/Office-Interior.jpg);">
                     <h1>office interior</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, atque.</p>
+                    <p>Office design is vital to both employees and customers. For employees who spend a large part of
+                        their day in an office, it is crucial to create a space that's functional, visually appealing,
+                        comfortable, and inviting—all of which promote productivity and efficiency.</p>
                 </div>
-                <div class="service-item" id="residential-interior">
+                <div class="service-item" style="background-image: url(./image/Residential-Interior.jpg);">
                     <h1>residential interior</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, atque.</p>
+                    <p>We work with architects to ensure that physical features allow for the appropriate division of
+                        private versus public space and can also aesthetically divide or unify rooms through colors,
+                        textures, and patterns</p>
                 </div>
-                <div class="service-item" id="flat-interior">
+                <div class="service-item" style="background-image: url(./image/Flat-Interior.png);">
                     <h1>flat interior</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, atque.</p>
                 </div>
-                <div class="service-item" id="ceiling-design">
+                <div class="service-item" style="background-image: url(./image/Ceiling-Design.jpg);">
                     <h1>ceiling design</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, atque.</p>
                 </div>
-                <div class="service-item" id="kitchen-cabinets">
+                <div class="service-item" style="background-image: url(./image/Kitchen-Cabinets.jpg);">
                     <h1>kitchen cabinets</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, atque.</p>
+                    <p>Work with us to plan the placement of the cooking , cleaning and storage zones.This will help you
+                        get the most efficient work space for your kitchen. The most common kitchen layout in the India
+                        are L-shaped,U-shaped,straight and parallel. </p>
                 </div>
-                <div class="service-item" id="partition-wall">
+                <div class="service-item" style="background-image: url(./image/Partition-Wall.jpg);">
                     <h1>partition wall</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, atque.</p>
+                    <p>In a large bedroom that has a separate seating area, a partition helps to divide the sleeping
+                        quarters from the rest of the space. The design ensures that seating area too gets the natural
+                        light coming in through the window.</p>
                 </div>
-                <div class="service-item" id="wardrobes">
+                <div class="service-item" style="background-image: url(./image/Wardrobes.jpg);">
                     <h1>wardrobes</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, atque.</p>
                 </div>
-                <div class="service-item" id="costum-furnitures">
-                    <h1>costum furnitures</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, atque.</p>
+                <div class="service-item" style="background-image: url(./image/Custom-Furnitures.jpg);">
+                    <h1>custom furnitures</h1>
+                    <p>Custom-made furniture refers to pieces that craftsmen build according to the customer's
+                        specifications. It allows you to decide on the color, type of material used, finish, and design,
+                        among other things.</p>
                 </div>
-                <div class="service-item" id="lighting">
+                <div class="service-item" style="background-image: url(./image/Lighting.jpg);">
                     <h1>lighting</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, atque.</p>
+                </div>
+                <div class="service-item" style="background-image: url(./image/Cladding.jpg);">
+                    <h1>cladding</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, atque.</p>
+                </div>
+                <div class="service-item" style="background-image: url(./image/Green-Wall.jpg);">
+                    <h1>green wall</h1>
+                    <p>Green walls are vertical structures that have different types of plants or other greenery
+                        attached to them. The greenery is often planted in a growth medium consisting of soil, stone, or
+                        water. Because the walls have living plants in them, they usually feature built-in irrigation
+                        systems</p>
+                </div>
+                <div class="service-item" style="background-image: url(./image/Landscaping.jpg);">
+                    <h1>landscaping</h1>
+                    <p>Plants improve our outdoor living spaces, connecting us with nature and enriching our lives</p>
+                </div>
+                <div class="service-item" style="background-image: url(./image/Tv_Unit.jpg);">
+                    <h1>tv unit</h1>
+                    <p>With open shelves and straight cabinetry , a TV unit offers lots of storage space for things that
+                        can cause clutter in the living space. Organize all the essential you use in your living room or
+                        bedroom with a contemporary TV unit that uplifts the style of your home and serves as a great
+                        storage solution </p>
                 </div>
             </div>
         </div>
@@ -116,7 +174,7 @@
             <div class="contact-bottom">
                 <div class="contact-item">
                     <div class="icon">
-                        <img src="./icons/phone.png" />
+                        <img src="./icons/phone.png" alt="phone-icon">
                     </div>
                     <div class="contact-info">
                         <h2>Phone</h2>
@@ -138,7 +196,7 @@
                 </div>
                 <div class="contact-item">
                     <div class="icon">
-                        <img src="./icons/email.png" />
+                        <img src="./icons/email.png" alt="email-icon">
                     </div>
                     <div class="contact-info">
                         <h2>Email</h2>
@@ -149,7 +207,7 @@
                 </div>
                 <div class="contact-item">
                     <div class="icon">
-                        <img src="./icons/address.png" alt="">
+                        <img src="./icons/address.png" alt="address-icon">
                     </div>
                     <div class="contact-info">
                         <h2>Address</h2>
@@ -167,9 +225,10 @@
     <section id="footer">
         <div class="footer container">
             <div class="section-title">
-                <h1><span>S</span>hishere</h1>
+                <h1><span>D5</span> Interiors</h1>
             </div>
-            <h2>Useless piece of crap</h2>
+            <h2>Your Thought,Our Design</h2>
+            <h3>Follow us</h3>
             <div class="social-icons">
                 <div class="social-item">
                     <a href="https://www.facebook.com/d5_interiors-102669311545653/" target="_blank">
@@ -182,11 +241,11 @@
                     </a>
                 </div>
             </div>
-            <p>Copyright © Shishere. All Rights Reserved</p>
+            <p>Copyright © D5 Interiors 2020-21. All Rights Reserved</p>
         </div>
     </section>
     <!-- End Footer -->
-    <script src="./index_app.js"></script>
+    <script src="./js/index_app.js"></script>
 </body>
 
 </html>

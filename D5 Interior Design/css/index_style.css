@@ -64,7 +64,6 @@ p {
 
 #header .header {
     min-height: 8vh;
-    background-color: rgba(31, 30, 30, 0, 24);
     transition: .5s ease background-color;
 }
 
@@ -151,6 +150,7 @@ p {
 }
 
 #header .hamburger {
+    opacity: 0;
     height: 60px;
     width: 60px;
     display: inline-block;
@@ -164,6 +164,7 @@ p {
     cursor: pointer;
     transform: scale(.8);
     margin-right: 20px;
+    transition: .5s ease opacity;
 }
 
 #header .hamburger::after {
@@ -217,7 +218,6 @@ p {
 
 #hero {
     position: relative;
-    background-image: url(./Image/hero-pic.jpg);
     background-size: cover;
     background-position: top center;
     z-index: 1;
@@ -231,7 +231,7 @@ p {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: .7;
+    opacity: .4;
     z-index: -1;
 }
 
@@ -242,55 +242,90 @@ p {
     justify-content: flex-start;
 }
 
-#hero h1 {
-    display: block;
-    width: max-content;
-    font-size: 4rem;
-    position: relative;
-    color: transparent;
-    animation: text_reveal .5s ease forwards;
-    animation-delay: 1s;
+#hero .hero .board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgb(7, 7, 7);
+    opacity: .6;
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
 }
 
-#hero h1:nth-child(1) {
-    animation-delay: 1s;
+#hero .hero .board h3 {
+    padding-top: 0;
+    color: white;
+    font-size: 1.3rem;
 }
 
-#hero h1:nth-child(2) {
-    animation-delay: 2s;
+#hero .board img {
+    padding-left: 10px;
+    height: 40px;
+    width: 40px;
+    transition: .3s ease scale;
 }
 
-#hero h1:nth-child(3) {
-    animation: text_reveal_name .5s ease forwards;
-    animation-delay: 3s;
+#hero .board .link {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-#hero h1 span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 0;
+#hero .board .link.bt {
+    justify-content: center;
+}
+
+.btn {
+    height: 50px;
+    width: 150px;
+    color: white;
+    background-color: transparent;
+    border-color: crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition: .3s ease background-color;
+    cursor: pointer;
+}
+
+.btn:hover {
     background-color: crimson;
-    animation: text_reveal_box 1s ease;
-    animation-delay: .3s;
 }
 
-#hero h1 i {
-    font-size: 9rem;
+#hero .board .link .fa-arrow-circle-right {
+    transition: .3s ease scale;
 }
 
-#hero h1:nth-child(1) span {
-    animation-delay: .5s;
+#hero .board .link .fa-arrow-circle-right:hover {
+    scale: 1.2;
 }
 
-#hero h1:nth-child(2) span {
-    animation-delay: 1.5s;
+#hero .board h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 4.5rem;
+    color: white;
+    padding-top: 20px;
+    text-transform: uppercase;
 }
 
-#hero h1:nth-child(3) span {
-    animation-delay: 2.5s;
+#hero .board h2 {
+    font-size: 2rem;
+    color: white;
+    padding: 20px;
+}
+
+#hero .board .link h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+#hero span {
+    color: crimson;
 }
 
 /* End Hero Section */
@@ -329,7 +364,7 @@ p {
     overflow: hidden;
 }
 
-#service .service-item a{
+#service .service-item a {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -374,56 +409,6 @@ p {
     color: white;
     text-align: left;
     z-index: 2;
-}
-
-/* back ground images */
-
-#service .service_bottom #space_planning {
-    background-image: url(./Image/space-planning.jpg);
-}
-
-#service .service_bottom #_3d-visualising {
-    background-image: url(./Image/3d-visualising.jpg);
-}
-
-#service .service_bottom #commercial-interior {
-    background-image: url(./image/commercial-interior.jpg);
-}
-
-#service .service_bottom #office-interior {
-    background-image: url(./image/office-interior\ .jpg);
-}
-
-#service .service_bottom #residential-interior {
-    background-image: url(./image/residential-interior.jpg);
-}
-
-#service .service_bottom #flat-interior {
-    background-image: url(./image/flat-interior.png);
-}
-
-#service .service_bottom #ceiling-design {
-    background-image: url(./image/ceiling-design.jpg);
-}
-
-#service .service_bottom #kitchen-cabinets {
-    background-image: url(./image/kitchen-cabinets.jpg);
-}
-
-#service .service_bottom #partition-wall {
-    background-image: url(./image/partition-wall.jpg);
-}
-
-#service .service_bottom #wardrobes {
-    background-image: url(./image/wardrobes.webp);
-}
-
-#service .service_bottom #costum-furnitures {
-    background-image: url(./image/costum-furnitures.jpg);
-}
-
-#service .service_bottom #lighting {
-    background-image: url(./image/lighting.jpg);
 }
 
 /* End Services Section */
@@ -519,6 +504,7 @@ p {
 }
 
 #footer h2 {
+    text-transform: capitalize;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -568,44 +554,19 @@ p {
     }
 }
 
-@keyframes text_reveal_box {
-    50% {
-        width: 100%;
-        left: 0;
-    }
-    100% {
-        width: 0;
-        left: 100%;
-    }
-}
-
-@keyframes text_reveal {
-    100% {
-        color: white;
-    }
-}
-
-@keyframes text_reveal_name {
-    100% {
-        color: crimson;
-        font-weight: 500px;
-    }
-}
-
 /* End Keyframes */
 
 /* Media Query for tablet */
 
 @media only screen and (min-width: 760px) {
-    .cta {
-        font-size: 2.5rem;
-        padding: 20px 60px;
-    }
     .section-title {
         font-size: 6rem;
     }
     /* hero */
     #hero h1 {
+        font-size: 6rem;
+    }
+    #hero h1 span {
         font-size: 7rem;
     }
     /* end hero */
@@ -677,7 +638,9 @@ p {
         display: none;
     }
     #header .nav-list {
+        opacity: 0;
         margin-right: 0;
+        transition: .7s ease opacity;
     }
     #header .nav-list ul {
         position: initial;
@@ -691,12 +654,20 @@ p {
         display: inline-block;
     }
     #header .nav-list ul a {
-        font-size-adjust: 1.8rem;
+        font-size: 2.5rem;
     }
     #header .nav-list ul a::after {
         display: none;
     }
     /* End Header section */
+    /* hero section */
+    #hero h1 {
+        font-size: 5rem;
+    }
+    #hero h1 span {
+        font-size: 6rem;
+    }
+    /* end hero section */
     /* Service section */
     #service .service_top p {
         margin-left: 100px;
@@ -710,3 +681,32 @@ p {
 }
 
 /* End Media Query for Desktop */
+
+/* Media Query for phone */
+
+@media only screen and (max-width:768px) {
+    #hero .hero {
+        justify-content: center;
+    }
+    #hero .hero .board {
+        height: 400px;
+        width: 400px;
+    }
+    #hero .hero .board .link {
+        width: 60%;
+    }
+    #hero .board h1 {
+        font-size: 4rem;
+    }
+    #hero .board h1 span {
+        font-size: 5rem;
+    }
+    #hero .board .link h3 {
+        font-size: 1.8rem;
+    }
+    #hero .board h2, h3 {
+        font-size: 1.9rem;
+    }
+}
+
+/* end Media Query for phone */

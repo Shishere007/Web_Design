@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+.navtop {
+    height: 60px;
+    width: 100%;
+    border: 0;
+}
+
+.navtop div {
+    display: flex;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100%;
+}
+
+.navtop div h1, .navtop div a {
+    display: inline-flex;
+    align-items: center;
+}
+
+.navtop img {
+    height: 70px;
+    width: 70px;
+}
+
+.navtop div {
+    max-width: 1200px;
+    background-color: #2f3947;
+}
+
+.navtop div h1 {
+    flex: 1;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    color: #eaebed;
+    font-weight: normal;
+}
+
+.navtop div a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #c1c4c8;
+    font-weight: bold;
+}
+
+.navtop div a i {
+    padding: 2px 8px 0 0;
+}
+
+.navtop div a:hover {
+    color: #eaebed;
+}
+
+body.loggedin {
+    background-color: #f3f4f7;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content h2 {
+    margin: 0;
+    padding: 25px 0;
+    font-size: 22px;
+    border-bottom: 1px solid #e0e0e3;
+    color: #4a536e;
+}
+
+.content>p, .content>div {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    margin: 25px 0;
+    padding: 25px;
+    background-color: #fff;
+}
+
+.content>p table td, .content>div table td {
+    padding: 5px;
+}
+
+.content>p table td:first-child, .content>div table td:first-child {
+    font-weight: bold;
+    color: #4a536e;
+    padding-right: 15px;
+}
+
+.content>div p {
+    padding: 5px;
+    margin: 0 0 10px 0;
+}
+
+.content .add-image {
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.content .add-image h1 {
+    padding: 10px;
+}
+
+.content .add-image form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #c7d9f3;
+}
+
+.content .add-image form input[type=submit] {
+    width: 100%;
+    background-color: #3a506e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.content .add-image form input[type=file] {
+    width: 100%;
+    background-color: #3a506e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.content .add-image form button {
+    background-color: red;
+    color: blue;
+}
+
+.content .add-image form input[type=file]:hover, .content .add-image form input[type=submit]:hover {
+    background-color: #273f5f;
+}
+
+.content .add-image form select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width:768px) {
+    .content .add-image form {
+        height: auto;
+        width: auto;
+    }
+}
